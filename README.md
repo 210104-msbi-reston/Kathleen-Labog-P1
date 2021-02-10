@@ -28,7 +28,7 @@ Requirements
 Environment Setup  
 * git clone https://github.com/210104-msbi-reston/Kathleen-Labog-P1.git
 * Use SSIS to extract each sheet of P1_Data.xls and names.csv to server by creating 5 separate packages with each of the data flow tasks pictured below 
-<img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
+** <img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
 * Run sql commands to populate distribution levels
 ** EXEC populateWarehouses
 ** EXEC populateDistributors
