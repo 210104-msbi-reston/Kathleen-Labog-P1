@@ -27,23 +27,42 @@ Requirements
 * Microsoft SQL Server Management Studio
 Environment Setup  
 * git clone https://github.com/210104-msbi-reston/Kathleen-Labog-P1.git
+* Open files in SQL folder in Sql Server Management Studio
+* Execute CREATE and USE statements from file P1_CreateTable.sql to create database and tables
+* Open Visual Studio (SSDT) and create an Integration services project  
 * Use SSIS to extract each sheet of P1_Data.xls and names.csv to server by creating 5 separate packages with each of the data flow tasks pictured below 
-** <img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
-* Run sql commands to populate distribution levels
-** EXEC populateWarehouses
-** EXEC populateDistributors
-** EXEC populateSubDistributors
-** EXEC populateChannelPartners
-** EXEC populateZones
-** EXEC populateStores
-** EXEC populateCustomers
-
+  * <img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
+* Execute CREATE and EXEC statements from P1_PopulateTableProcedures.sql to generate distribution levels and customers
+* Execute CREATE statements from P1_TriggersAndDistributionProcedures.sql to create triggers and procedures
+* Object explorer tables should look like image below: 
+  * <img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/DatabaseManagementStudio.png?raw=true">
 
 ## Usage
-
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
-
+* Stored Procedures available to create and manipulate stock
+  * Customer return
+    * EXEC guestReturn serialNo, storeID
+  * Customer purchase
+    * EXEC guestPurchase SSN, storeID, productID
+  * Request product at store level
+    * EXEC storeProductRequest storeID, productID
+  * Request product at zone level
+    * EXEC zoneProductRequest zoneID, productID
+  * Request product at channel partner level
+    * EXEC channelPartnerProductRequest channelPartnerID, productID
+  * Request product at subdistributor level 
+    * EXEC subDistributorProductRequest subDistributor, productID
+  * Request product at distributor level
+    * EXEC distributorProductRequest distributorID, productID
+  * Request product at warehouse level
+    * EXEC warehouseProductRequest warehouseID, productID
+  * Request product at production house level
+    * EXEC productHouseProductRequest productHouseID, productID
+  * Create one random item at production house level
+    * EXEC generateProductLogItem
+  * Creates 100  random products at production house level
+    * EXEC generateProductLogItems 
+  * Creates n number of random items at each level
+    * EXEC generateInventories n 
 ## License
 
 This project uses the following license: 
