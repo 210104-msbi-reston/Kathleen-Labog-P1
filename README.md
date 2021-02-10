@@ -28,6 +28,7 @@ Requirements
 Environment Setup  
 * git clone https://github.com/210104-msbi-reston/Kathleen-Labog-P1.git
 * Use SSIS to create data flow tasks to extract each sheet of P1_Data.xls and names.csv to server 
+<img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
 
 (include all environment setup steps)
 
