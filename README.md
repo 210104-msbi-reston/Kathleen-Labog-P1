@@ -68,5 +68,5 @@ Environment Setup
 This project uses the following license: 
 * [SQL Server Management Studio ](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
 * [SQL Server Data Tools ](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
-* [LibreOffice] (https://www.libreoffice.org/about-us/licenses)
+* [LibreOffice](https://www.libreoffice.org/about-us/licenses)
 
