@@ -27,16 +27,17 @@ Requirements
 * Microsoft SQL Server Management Studio
 Environment Setup  
 * git clone https://github.com/210104-msbi-reston/Kathleen-Labog-P1.git
-* Use SSIS to create data flow tasks to extract each sheet of P1_Data.xls and names.csv to server 
-<img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
+* Use SSIS to extract each sheet of P1_Data.xls and names.csv to server by creating 5 separate packages with each of the data flow tasks pictured below 
+** <img src = "https://github.com/210104-msbi-reston/Kathleen-Labog-P1/blob/main/Images/project1SIS.png?raw=true">
+* Run sql commands to populate distribution levels
+** EXEC populateWarehouses
+** EXEC populateDistributors
+** EXEC populateSubDistributors
+** EXEC populateChannelPartners
+** EXEC populateZones
+** EXEC populateStores
+** EXEC populateCustomers
 
-(include all environment setup steps)
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
 
 ## Usage
 
